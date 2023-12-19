@@ -35,11 +35,11 @@ class Rot13:
             if cipherChar.isupper():
                 searchResult = self.alphaDictUpper.get(cipherChar)
                 upper = 1
-                print("UPPER")
+
             elif cipherChar.islower():
                 searchResult = self.alphaDictLower.get(cipherChar)
                 lower = 1
-                print("LOWER")
+
             else:
                 searchResult = self.alphaDictLower.get(cipherChar)
             
@@ -55,12 +55,12 @@ class Rot13:
                     for key, value in self.alphaDictLower.items():
                         if value == rot13Index:
                             self.cipherStringDecrypt += key
-                            print(self.cipherStringDecrypt)
+
                 elif upper == 1:
                     for key, value in self.alphaDictUpper.items():
                         if value == rot13Index:
                             self.cipherStringDecrypt += key
-                            print(self.cipherStringDecrypt)                    
+                                               
                         
 
 
